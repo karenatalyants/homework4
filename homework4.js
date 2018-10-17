@@ -184,23 +184,20 @@ const printRow = function (b) {
 
 }
 const checkerBoard = function (a) {
-
-let space = ' ';
-let rowLength = a;
-let rowNumber = 1;
-while (rowNumber <= rowLength) {
-  if (rowNumber === 1) {
-    console.log(printRow(rowLength));
+  let space = ' ';
+  let rowLength = a;
+  let rowNumber = 1;
+  while (rowNumber <= rowLength) {
+    if (rowNumber === 1) {
+      console.log(printRow(rowLength));
+      rowNumber = rowNumber + 1;
+    }
+    if (rowNumber%2 !== 0) {
+      console.log(printRow(rowLength));
+      rowNumber = rowNumber + 1;
+    } else if (rowNumber%2 === 0) {
+    console.log(space+printRow(rowLength));
     rowNumber = rowNumber + 1;
   }
-  if (rowNumber%2 !== 0) {
-    console.log(printRow(rowLength));
-    rowNumber = rowNumber + 1;
-  } else if (rowNumber%2 === 0) {
-  console.log(space+printRow(rowLength));
-  rowNumber = rowNumber + 1;
-
-}
-}
 }
 checkerBoard(10);
