@@ -165,4 +165,42 @@ const reverse = function(string) {
   return newStr;
 }
 
-console.log(reverse('vai qu ara es inch exav hors arev cija adrak'));
+console.log(reverse('vera sroh vaxe hcni se ara uq iav'));
+
+
+
+//8. Create a function called checkerboard using While loop which, given
+// a size argument, will draw an n by n checkerboard on the screen.
+
+const printRow = function (b) {
+  let count = b;
+  let stars = '*';
+  while (count>1) {
+    stars = stars + '*';
+    count = count-1;
+
+  };
+  return stars;
+
+}
+const checkerBoard = function (a) {
+
+let space = ' ';
+let rowLength = a;
+let rowNumber = 1;
+while (rowNumber <= rowLength) {
+  if (rowNumber === 1) {
+    console.log(printRow(rowLength));
+    rowNumber = rowNumber + 1;
+  }
+  if (rowNumber%2 !== 0) {
+    console.log(printRow(rowLength));
+    rowNumber = rowNumber + 1;
+  } else if (rowNumber%2 === 0) {
+  console.log(space+printRow(rowLength));
+  rowNumber = rowNumber + 1;
+
+}
+}
+}
+checkerBoard(10);
