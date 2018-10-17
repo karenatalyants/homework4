@@ -115,3 +115,54 @@ const findMinMax = function (a, b) {
 
 // 5. Create a function 'forEach' that takes an array and a function and then
 // calls the given function once with each value in the given array.
+
+
+const factorial = function (val) {
+  let a = val;
+  let fact = 1;
+  while (a>0) {
+    fact = fact * a;
+    a = a - 1;
+  }
+  return fact;
+};
+
+const forEach = function (array, function()) {
+  let b = 0;
+  while (b < array.length) {
+    factorial(array[b]);
+    b = b + 1;
+  }
+};
+
+console.log(forEach([2,3,4],factorial()));
+
+
+// 6. Create a function 'sum' that takes an array of
+// numbers and returns their sum.
+
+const sum = function (array) {
+  let b = 0;
+  let sumsum = 0;
+  while (b < array.length) {
+    sumsum = sumsum + array[b];
+    b = b + 1;
+  }
+  return sumsum;
+}
+
+// console.log(sum([3,5,77, 1000, 1000]));
+
+// 7. Write a function 'reverse' that reverses the given string.
+
+const reverse = function(string) {
+  let b = string.length-1;
+  let newStr = '';
+  while (b >= 0) {
+  newStr = newStr + string[b];
+  b = b - 1;
+  }
+  return newStr;
+}
+
+console.log(reverse('vai qu ara es inch exav hors arev cija adrak'));
