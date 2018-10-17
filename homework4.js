@@ -1,3 +1,6 @@
+//2. Use While loop to create a function called 'triangleStars' that prints
+//an upside-down triangle to the console of the given height.
+
 
 //this function takes a number, and prints that many stars * next to
 //each other on a line
@@ -35,6 +38,9 @@ while (rowLength>0) {
 
 triangleStars(27);
 
+//3. Write a function that takes a two dimensional array and
+// returns a single array with all the values in the child arrays.
+
 //a function that takes a two dimensional array of ANY length, and returns
 //a single array with all the values from the child arrays next to
 // each other
@@ -58,6 +64,10 @@ const multiToSingle = function (array) {
 console.log(multiToSingle([[1,2,3],[4,5,'spaghetti',6],[7,8,4,2,4,1,-23,9],[10,11,12],['boxk','gyazar','kartol']]));
 
 
+//4. Create a function 'findMinMax' that returns the largest number
+//from the given array if the second argument is true.
+// It returns the smallest number in the given array if the
+// second argument is false.
 
 // this function finds the largest or the smallest number from an
 // array of ANY length
@@ -102,3 +112,6 @@ const findMinMax = function (a, b) {
 }
 
  console.log(findMinMax([1,5,3,2,7,22,2], false));
+
+// 5. Create a function 'forEach' that takes an array and a function and then
+// calls the given function once with each value in the given array.
