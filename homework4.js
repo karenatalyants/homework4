@@ -35,16 +35,28 @@ while (rowLength>0) {
 
 triangleStars(27);
 
+//a function that takes a two dimensional array of ANY length, and returns
+//a single array with all the values from the child arrays next to
+// each other
 
-//a function that takes a two dimensional array and returns
-//a single array with all the values from the child arrays
+const multiToSingle = function (array) {
+  const newArr = [];
+  let a = 0;
+  let c = 0;
+  while (a < array.length) {
+    let b = 0;
+    while (b < array[a].length) {
+      newArr[c] = array[a][b];
+      b = b + 1;
+      c = c + 1;
+    }
+    a = a + 1;
+  }
+  return newArr;
+}
 
-const multiToSingle = function ([[1,2,3],[4,5,6],[7,8,9]]) {
-  const newArr = [whatever];
-  let n = arr.length-1;
-  let m = a.length-1;
+console.log(multiToSingle([[1,2,3],[4,5,'spaghetti',6],[7,8,4,2,4,1,-23,9],[10,11,12],['boxk','gyazar','kartol']]));
 
-};
 
 
 // this function finds the largest or the smallest number from an
