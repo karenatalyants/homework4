@@ -113,29 +113,30 @@ const findMinMax = function (a, b) {
 
  console.log(findMinMax([1,5,3,2,7,22,2], false));
 
-// 5. Create a function 'forEach' that takes an array and a function and then
-// calls the given function once with each value in the given array.
+ // 5. Create a function 'forEach' that takes an array and a function and then
+ // calls the given function once with each value in the given array.
 
 
-const factorial = function (val) {
-  let a = val;
-  let fact = 1;
-  while (a>0) {
-    fact = fact * a;
-    a = a - 1;
-  }
-  return fact;
-};
+ const factorial = function (val) {
+   let a = val;
+   let fact = 1;
+   while (a>0) {
+     fact = fact * a;
+     a = a - 1;
+   }
+   return console.log(fact);
+ };
 
-const forEach = function (array, function()) {
-  let b = 0;
-  while (b < array.length) {
-    factorial(array[b]);
-    b = b + 1;
-  }
-};
+ const forEach = function (array, jj) {
+   let b = 0;
+   while (b < array.length) {
+     jj(array[b]);
+     b = b + 1;
+   }
+ };
 
-console.log(forEach([2,3,4],factorial()));
+ console.log(forEach([2,3,4],factorial));
+
 
 
 // 6. Create a function 'sum' that takes an array of
